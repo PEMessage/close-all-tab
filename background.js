@@ -50,6 +50,22 @@ const closeAllTabs = function(action, thisTab) {
             }
         });
     }
+
+    else if(action === "current-in-currentwin") {
+        let querying = chrome.tabs.query({'currentWindow': true}, function(tabs){
+            var cpt = localStorage.getItem('cpt') || "false";
+            if (cpt === "true") {
+                for (let tab of tabs) {
+                    if (tab.id !== thisTab.id) chrome.tabs.remove(tab.id);
+                } 
+            }
+            if (cpt === "false") {
+                for (let tab of tabs) {
+                    if (tab.id !== thisTab.id && tab.pinned === false) chrome.tabs.remove(tab.id);
+                } 
+            }
+        });
+    }
     else if(action === "custom") {
         var customurl = localStorage.getItem("customurl") || "https://www.google.com/";
         chrome.tabs.create({url: customurl}, function(customTab){
