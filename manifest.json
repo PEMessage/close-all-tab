@@ -1,0 +1,34 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icons/128.png",
+      "default_title": "Close All Tabs"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "default": "Alt+W"
+         }
+      }
+   },
+   "description": "Close all open tabs. Optionally close pinned tabs and incognito mode tabs.",
+   "differential_fingerprint": "1.2e65f23b3a5f016c688c36755248f45a494b32a277def8fada591f03d4c2926e",
+   "homepage_url": "https://browsernative.com/close-all-tabs-extension/",
+   "icons": {
+      "128": "icons/128.png",
+      "48": "icons/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh8719ZCmiqxfdEl7hsYTQEK6wtYK4s5jg4uZ8Pg8nJRW0igAH4WHOlyUth09Lrs7k3+Aa52jIDVUlmozb+3HLSxf++Bmy9lTsWVd7FFfInUr/GFlgnrkFABuBCFUWiQMAyuqcTc9BQv3bH4erhhjPRK2mFy9RtngabhDlgth5eH7DOb0zxb73eQckb0lwAOqvG9NF9tNJ+gxXWQiffe7VksjqfV13y5PEIWRUYIh8ySyFibd/lzmE8cwF+honp7sgz20/CP1sPCGmdzdIugNka9RJepkgz7fWKxg7fmxgybL/gxXN9bMalFutNGhZYLcM21m1knYDrm+wYNbxMLOjwIDAQAB",
+   "manifest_version": 2,
+   "name": "Close All Tabs",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "/options/options.html"
+   },
+   "permissions": [ "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.1"
+}

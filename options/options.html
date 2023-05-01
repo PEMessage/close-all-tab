@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="options.css" />
+    <title>Close All Tabs : Options</title>
+</head>
+<body>
+    <h1>Close All Tabs</h1>
+    <p>Thanks for installing the <a href="https://browsernative.com/close-all-tabs-extension/" target="_blank">Close All Tabs</a> browser extension. On this page, you can set your preferences.</p>
+    <p><strong>Select an action for the toolbar button:</strong></p>
+    
+    <p>
+        <input type="radio" name="action" value="newtab"> Close all tabs, and open a new tab page (default)<br>
+        <input type="radio" name="action" value="current"> Close all tabs except the current tab <br>
+        <input type="radio" name="action" value="currentwin"> Close all tabs only in <em>current window</em>, and open a new tab<br>
+        <input type="radio" name="action" value="otherwins"> Close all tabs only in <em>other windows</em> including pinned tabs (thus, close other windows)<br>
+        <input type="radio" name="action" value="exit"> Close all tabs (including pinned tabs) and exit<br>
+        <input type="radio" name="action" value="custom"> Close all tabs, and open this URL: <input type="url" size="30" id="customurl" name="customurl" placeholder="https://, file:// or chrome://" autocomplete="off" title="must start with https://, file:// or chrome://"><br>
+        
+    </p>
+    <p><strong>Do you want to close pinned tabs using this extension?</strong></p>
+    <p>
+        <input type="checkbox" name="cpt" id="cpt" value="cpt"> Close Pinned Tabs
+    </p>
+    <p>
+        <button id="save" style="margin-top: 20px;">Save Options</button> &nbsp; <span id="status" style="color: red;"></span>
+    </p>
+
+    <p>&nbsp; <span id="warning" style="color: red;">&nbsp;</span></p>
+    
+    <p><strong>Tips:</strong>
+        <ul>
+            <li>Use keyboard shortcut command <strong>Alt + w</strong> to quickly use this extension. If this command is not working for you, or you want to choose a different keys combination, <a href="https://browsernative.com/extensions/change-chrome-extensions-keyboard-shortcuts/" target="_blank">follow this guide</a>.</li>
+            <li>Want to close incognito tabs using this extension? Visit our <a href="https://browsernative.com/close-all-tabs-extension/" target="_blank">home page</a> for more information.</li>
+            <li>Use extension's options in the context menu (right click menu).</li>
+        </ul>
+    </p>
+    
+    <hr/>
+    
+    <p><a href="https://browsernative.com/close-all-tabs-extension/" target="_blank">Close All Tabs</a> extension by <a href="https://browsernative.com/extensions/" target="_blank">BrowserNative</a></p>
+    <p>Please rate and review us <a href="https://chrome.google.com/webstore/detail/close-all-tabs/jcokdfogijmigonkhckmhldgofjmfdak/reviews" target="_blank">on Chrome Web Store</a>. For any feedback or suggestion, email us at <em>browsernative.apps@gmail.com</em>.</p>
+    
+    <script src="options.js"></script>
+    
+</body>
+</html>
