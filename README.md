@@ -1,6 +1,6 @@
 # Close All Tab
 
-Majority code from [browsernative](https://browsernative.com/)
+Majority of the code come from [browsernative](https://browsernative.com/)
 
 Only add a new option  
 `close all tab expect current tab(only in current windows)`
